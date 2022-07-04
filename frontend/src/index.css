@@ -1,6 +1,6 @@
 :root {
   --nav-width: 92px;
-
+  --todo-width: 30vw;
   --primary-color: #3f52bb;
   --bg-color: #4f63d7;
   --sub-color: #b6cefc;
@@ -10,6 +10,7 @@
   --normal-font-size: 1rem;
   --small-font-size: 0.875rem;
   --z-fixed: 100;
+  --adjust-height: 20%;
 }
 
 *,
@@ -73,8 +74,8 @@ a {
 }
 
 .nav_toggle {
-  font-size: 1.25rem;
-  padding: 0.75rem;
+  font-size: 1.6rem;
+  padding: 0.6rem;
   cursor: pointer;
 }
 

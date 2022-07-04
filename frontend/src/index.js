@@ -4,8 +4,8 @@ import { Provider } from "react-redux";
 import { store } from "./app/store";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import { ToastContainer } from "react-toastify";
 import "./index.css";
-import ReactDOM from "react-dom";
 const container = document.getElementById("root");
 const root = createRoot(container);
 
@@ -13,6 +13,7 @@ root.render(
   <React.StrictMode>
     <Provider store={store}>
       <App />
+      <ToastContainer />
     </Provider>
   </React.StrictMode>
 );

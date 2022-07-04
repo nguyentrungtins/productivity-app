@@ -1,13 +1,18 @@
 import React from "react";
 import classes from "./TodoItem.module.css";
-const TodoItem = () => {
+const TodoItem = ({ todos }) => {
   return (
     <div className={classes.todoItem__wrapper}>
-      <input className={classes.input__itemTodo} type="checkbox" id="one" />
-      <label className={classes.label__todo} for="one">
+      <input
+        className={classes.input__itemTodo}
+        type="checkbox"
+        id={todos._id}
+      />
+      <label className={classes.label__todo} for={todos._id}>
         <span></span>
       </label>
-      <h3>Task 1</h3>
+
+      <h3>{todos.text}</h3>
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import React from "react";
-
+import { FaBars } from "react-icons/fa";
 const SideBar = () => {
   const handleClickActive = (e) => {
     // Toggle isActive state on click
